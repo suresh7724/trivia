@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Trivia 2.0/style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" href="/Trivia 2.0/img/quiz.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="/Trivia 2.0/img/logo.png" width="150px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- alert -->
+    <div id="alert">
+
+    </div>
+    <!-- page content -->
+    <div class="container-fluid mt-5" id="page">
+        <div class="jumbotron" id="welcome">
+            <div class="content-head d-flex justify-content-center">
+                <h1>Welcome</h1>
+            </div>
+            <div class="content-desc d-flex justify-content-center mt-2">
+                <h3>Give Challenge Yourself</h3>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                <button class="btn btn-secondary" id="start">Take Quiz</button>
+            </div>
+        </div>
+        <button onclick="loadData()" class="d-none">Load data</button>
+        <div hidden id="spinner"></div>
+        <div class="container-fluid">
+            <div id="content" class="d-flex justify-content-center mt-2">
+                <div class="box d-none">
+                    <div id="head" class="m-3">
+                        <div id="Questions"></div>
+                        <div id="score"></div>
+                    </div>
+                    <div id="question" class="m-4">
+                        
+                    </div>
+                    <div id="options" class=" justify-content-center">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mb-3">
+                <button class="btn btn-success invalid-feedbackresult
+                 d-none" id="result">View result</button>
+            </div>
+   
+            </div>
+        </div>
+          <div id="result-box" class="d-flex justify-content-center">
+                <div id="results" class="box-result d-none">
+                   
+                </div>
+    </div>
+    <script src="/Trivia 2.0/script/app.js"></script>
+</body>
+
+</html>
