@@ -41,16 +41,16 @@ function Display(data)
 
     // display Options
     options.innerHTML=` <div class="optbox1">
-    <h5 class="mt-2" id="option1">${data.results[questionNum].answers[0]}</h5>
+    <h5 class="" id="option1">${data.results[questionNum].answers[0]}</h5>
 </div>
 <div class="optbox2">
-    <h5 class="mt-2" id="option2">${data.results[questionNum].answers[1]}</h5>
+    <h5 class="" id="option2">${data.results[questionNum].answers[1]}</h5>
 </div>
 <div class="optbox3">
-    <h5 class="mt-2" id="option3">${data.results[questionNum].answers[2]}</h5>
+    <h5 class=" "id="option3">${data.results[questionNum].answers[2]}</h5>
 </div>
 <div class="optbox4">
-    <h5 class="mt-2" id="option4">${data.results[questionNum].answers[3]}</h5>
+    <h5 class="" id="option4">${data.results[questionNum].answers[3]}</h5>
 </div>`
 
 
@@ -73,7 +73,7 @@ function Display(data)
             // console.log('this is correct answer');
             // $('#option1').toggleClass('right-answer')
             $('#option1').toggleClass('right-answer')
-            $('#option1').toggleClass('mt-2')
+            // $('#option1').toggleClass('mt-2')
             setTimeout(function () { 
                 
                 score++;
@@ -92,7 +92,7 @@ function Display(data)
             // console.log('try different');
             
             $('#option1').toggleClass('wrong-answer')
-            $('#option1').toggleClass('mt-2')
+            // $('#option1').toggleClass('mt-2')
             setTimeout(function()
             { 
                 questionNum++;
@@ -117,7 +117,7 @@ function Display(data)
             // console.log('this is correct answer');
             // $('#option1').toggleClass('right-answer')
             $('#option2').toggleClass('right-answer')
-            $('#option2').toggleClass('mt-2')
+            // $('#option2').toggleClass('mt-2')
             setTimeout(function () { 
                 
                 questionNum++;
@@ -137,7 +137,7 @@ function Display(data)
             // console.log('try different');
             
             $('#option2').toggleClass('wrong-answer')
-            $('#option2').toggleClass('mt-2')
+            // $('#option2').toggleClass('mt-2')
             setTimeout(function()
             { questionNum++;
                 if(questionNum<=data.results.length-1){
@@ -161,7 +161,7 @@ function Display(data)
             // console.log('this is correct answer');
             // $('#option1').toggleClass('right-answer')
             $('#option3').toggleClass('right-answer')
-            $('#option3').toggleClass('mt-2')
+            // $('#option3').toggleClass('mt-2')
             setTimeout(function () { 
                 
                 score++;
@@ -180,7 +180,7 @@ function Display(data)
             // console.log('try different');
             
             $('#option3').toggleClass('wrong-answer')
-            $('#option3').toggleClass('mt-2')
+            // $('#option3').toggleClass('mt-2')
             setTimeout(function()
             { questionNum++;
                 if(questionNum<=data.results.length-1){
@@ -203,8 +203,8 @@ function Display(data)
         if (userAns == data.results[questionNum].correct_answer) {
             // console.log('this is correct answer');
             // $('#option1').toggleClass('right-answer')
-            $('#option4').toggleClass('right-answer')
-            $('#option4').toggleClass('mt-2')
+            // $('#option4').toggleClass('right-answer')
+            // $('#option4').toggleClass('mt-2')
             setTimeout(function () { 
                 
                 score++;
@@ -223,7 +223,7 @@ function Display(data)
             // console.log('try different');
             
             $('#option4').toggleClass('wrong-answer')
-            $('#option4').toggleClass('mt-2')
+            // $('#option4').toggleClass('mt-2')
             setTimeout(function()
             { questionNum++;
                 if(questionNum<=data.results.length-1){
